@@ -22,7 +22,7 @@ from books.views import BookAPIView, BookDetailAPIView, AuthorAPIView, AuthorDet
 urlpatterns = [
     path('admin/', admin.site.urls),
 
-    path('books/', BookAPIView.as_view()),
+    path('books/', BookAPIView.as_view()),  # endpoint
     path('books/<int:pk>/', BookDetailAPIView.as_view()),
     path('authors/', AuthorAPIView.as_view()),
     path('authors/<int:pk>/', AuthorDetailAPIView.as_view()),
